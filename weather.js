@@ -25,13 +25,13 @@ async function getWeather(city) {
     const weatherCondition = data.weather[0].main.toLowerCase();
     console.log(data);
     // Map to your images
-    const iconMap = {
-      clear: "clear.png",
-      clouds: "clouds.png",
-      rain: "drizzle.png",
-      mist: "mist.png",
-      snow: "snow.png"
-    };
+   const iconMap = {
+  clear: "Images/clear.png",
+  clouds: "Images/clouds.png",
+  rain: "Images/drizzle.png",
+  mist: "Images/mist.png",
+  snow: "Images/snow.png"
+};
 
     // Pick correct image, fallback to clouds
     document.getElementById("weather-icon").src = iconMap[weatherCondition] || "clouds.png";
