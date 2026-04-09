@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+/* Main Card */
+.app {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 20px;
+  width: 350px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.app:hover {
+  transform: scale(1.03);
+}
+
+/* Title */
+header h1 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+#search-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: 0.3s;
+}
+
+#search-btn:hover {
+  background: #ddd;
+}
+
+/* Weather Section */
+.current-weather {
+  display: none;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.current-weather h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+/* Weather Info */
+.weather-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.weather-info img {
+  width: 90px;
+}
+
+.weather-info p {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+/* Details Section */
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.details div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 12px;
+  width: 45%;
+  text-align: center;
+}
+
+.details img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.details span {
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
