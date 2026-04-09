@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weather App</title>
-  <link rel="stylesheet" href="weather.css" />
+  <link rel="stylesheet" href="index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="app">
     <header>
       <h1>Weather App</h1>
@@ -20,22 +21,23 @@
     <section class="current-weather">
       <h2 id="city-name">City Name</h2>
       <div class="weather-info">
-        <img id="weather-icon" src="Images/clouds.png" alt="Weather Icon" />
+        <img id="weather-icon" src="Images/clouds.png" />
         <p id="temperature">15°C</p>
       </div>
 
       <div class="details">
-        <div class="humidity">
-          <img id="humidity-icon" src="Images/humidity.png" alt="Humidity" />
+        <div>
+          <img src="Images/humidity.png" />
           <span id="humidity-value">Humidity</span>
         </div>
-        <div class="wind-speed">
-       <img id="wind-icon" src="Images/wind.png" alt="Wind" />
+        <div>
+          <img src="Images/wind.png" />
           <span id="wind-value">Wind</span>
         </div>
       </div>
     </section>
   </div>
-  <script src="weather.js"></script>
+
+  <script src="index.js"></script>
 </body>
 </html>
